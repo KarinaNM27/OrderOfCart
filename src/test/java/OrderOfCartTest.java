@@ -19,7 +19,7 @@ class OrderOfCartTest {
 
     @BeforeAll
     static void setupAll() {
-        System.setProperty("webdriver.chrome.driver", "driver/win/chromedriver1.exe");
+        System.setProperty("webdriver.chrome.driver", "driver/linux/chromedriver.exe");
 
 
 //        ChromeOptions options = new ChromeOptions();
@@ -33,12 +33,12 @@ class OrderOfCartTest {
 
     @BeforeEach
     void setup() {
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--disable-dev-shm-usage");
-//        options.addArguments("--no-sandbox");
-//        options.addArguments("--headless");
-//        driver = new ChromeDriver(options);
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
+
 
     }
 
