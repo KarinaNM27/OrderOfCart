@@ -19,7 +19,7 @@ class OrderOfCartTest {
 
     @BeforeAll
     static void setupAll() {
-        System.setProperty("webdriver.chrome.driver", "driver/win/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\IdeaProjects\\OrderOfCart\\driver\\win\\chromedriver.exe");
 
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("--disable-dev-shm-usage");
