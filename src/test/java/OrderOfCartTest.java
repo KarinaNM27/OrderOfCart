@@ -19,7 +19,7 @@ class OrderOfCartTest {
 
     @BeforeAll
     static void setupAll() {
-        System.setProperty("webdriver.chrome.driver", "driver/linux/chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
 
 
 //        ChromeOptions options = new ChromeOptions();
