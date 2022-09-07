@@ -40,8 +40,6 @@ class OrderOfCartTest {
     void test() {
 
         driver.get("http://localhost:7777");
-
-
         driver.findElement(By.cssSelector("span[data-test-id='name'] input")).sendKeys("Иванова Мария");
         driver.findElement(By.cssSelector("span[data-test-id='phone'] input")).sendKeys("+79123456789");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
